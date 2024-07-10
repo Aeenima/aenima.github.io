@@ -1,0 +1,113 @@
+/*STYLE SHEET*/
+
+h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+    color: black;
+    }
+  
+  h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: black;
+    }
+  
+  h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 1.45em;
+    color: black;
+    text-align: center;
+    padding-bottom: 0.2em;
+    border-bottom-style: solid;
+    border-bottom-color: #B0C4DE;
+    border-bottom-width: 0.1em;
+  /*
+    background-color: #B0C4DE;
+    box-shadow: 2px 3px #D3D3D3;
+  */
+    }
+  
+  img {
+    max-width: 890px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em; 
+    }
+  
+  Body {
+    background-color: #C0C0C0;
+    }
+  
+  p {
+    font-size: 1.2em;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: black;
+    }
+  
+  li {
+    font-family: 'IBM Plex Mono', Monospace;
+    color: black;
+    list-style-type:none;
+    }
+  
+  
+  
+  .Article {
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    max-width: 888px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 5px 10px #888888;
+    }
+  
+  #Footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: x-small;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+    padding-top: 1em;
+    }
+  
+  .code {
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 0.5em;
+    background-color: #E6E6E6;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  
+  #menu {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: bold;
+    background-color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.1em;
+    max-width: 888px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 5px 10px #888888;
+  }
+  
+  #sitelogo {
+    margin-bottom: 2em; 
+    max-width: 888px; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    box-shadow: 5px 8px #888888;
+  }

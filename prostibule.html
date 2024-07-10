@@ -1,0 +1,847 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>hotline</title>
+<link rel="stylesheet" type="text/css" href="koshka.css"/>
+<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+<link href="" rel="alternate" type="application/rss+xml" title="RSS feed" />
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+
+<!--
+
+-->
+
+<style type="text/css">
+body
+{
+color: rgb(255, 96, 255);
+background-color: rgb(64, 0, 64);
+background-image: url('koshkatopbackground.png'), url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2hyN2UyNm1scWh1cGpyajMxbXVjYWIwMGd3MWppMHJiNWt2Z2l3NSZlcD12MV9pbnRlcm5hbF9naWZfYnlaWQmY3Q9Zw/zW0n7AIWG4ka4/giphy.gif');
+background-repeat: repeat no-repeat, repeat;
+}
+
+a:link
+{
+color: rgb(255, 32, 180);
+}
+
+a:visited
+{
+color: rgb(128, 0, 128);
+}
+
+a:hover
+{
+color: rgb(255, 160, 255);
+text-shadow: 0px 0px 50px rgb(255, 75, 255), 0px 0px 6px rgb(255, 75, 255);
+}
+
+.main
+{
+margin: 0% 0% 0% 180px;
+width: calc(100% - 660px);
+background-color: rgb(50, 0, 48);
+border-style: solid;
+padding: 10px 10px 0px 10px;
+border-color: rgb(255, 55, 190);
+border-width: 4px;
+border-radius: 45px;
+overflow-y: scroll;
+height: 655px;
+text-align: center;
+}
+
+.main2
+{
+margin-left: 8%;
+margin-right: 8%;
+width: auto;
+background-color: rgb(50, 0, 48);
+border-style: solid;
+padding: 5px;
+border-color: rgb(144, 42, 201);
+border-width: 4px;
+border-radius: 45px;
+margin-top: 25px;
+text-align: center;
+}
+
+.rightbar, .affiliates
+{
+width: 410px;
+}
+
+.rightbar
+{
+position: absolute;
+padding: 10px;
+right: 10px;
+margin-right: 0%;
+border-style: solid;
+border-color: rgb(255, 55, 255);
+border-radius: 45px;
+background-color: rgb(50, 0, 48);
+border-width: 4px;
+overflow-y: scroll;
+height: 333px;
+text-align: center;
+}
+
+
+
+.topleftbar
+{
+position: absolute;
+margin: 0% 25% 0% 25%;
+border-style: solid;
+border-radius: 5px;
+border-color: rgb(255, 0, 255);
+border-width: 3px;
+}
+
+.leftbar
+{
+position: absolute;
+float: left;
+margin-left: 2px;
+border-style: solid;
+border-color: rgb(255, 128, 255);
+border-width: 3px;
+padding: 5px;
+width: 150px;
+border-radius: 15px;
+background-color: rgb(50, 0, 48);
+}
+
+.rightbar, .main, .main2, .affiliates, .leftbar
+{
+border-color: rgb(255, 55, 196);
+border-width: 3px;
+box-shadow: 0px 0px 15px 3px rgb(255, 55, 196), inset 0px 0px 15px 3px rgb(255, 55, 196);
+background-image: linear-gradient(rgb(64, 0, 60), rgb(32, 0, 30));
+}
+
+.innerleftbar2
+{
+background-color: rgb(128, 0, 128);
+padding: 10px;
+border-radius: 15px;
+}
+
+.topbar
+{
+vertical-align: top;
+margin: auto;
+text-align: center;
+width: 80%;
+}
+
+.topnavigationbar
+{
+vertical-align: top;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+width: 100%;
+}
+
+.bottombar
+{
+padding: 10px;
+width: 67%;
+margin-right: auto;
+margin-left: auto;
+border-style: solid;
+border-radius: 5px;
+border-color: rgb(255, 160, 255);
+border-width: 3px;
+background-color: rgb(255, 192, 255);
+}
+
+hr
+{
+border-style: solid;
+border-color: rgb(255, 128, 255);
+border-width: 1px;
+width: 80%;
+}
+
+date, span.date
+{
+font-weight: bold;
+font-size: 1.25em;
+color: rgb(255, 45, 255);
+}
+
+hr.small
+{
+width: 60%;
+}
+
+.promptthing
+{
+margin-left: auto;
+margin-right: auto;
+width: 500px;
+border-style: solid;
+border-width: 4px;
+border-radius: 15px;
+padding: 15px;
+border-color: rgb(255, 55, 196);
+background-color: rgb(40, 0, 54);
+}
+
+territory, span.territory
+{
+font-weight: bold;
+}
+
+locale, span.locale
+{
+font-weight: bold;
+font-size: 1.3em;
+}
+
+pinkwarning, span.pinkwarning
+{
+font-weight: bold;
+color: rgb(255, 255, 255);
+font-size: 1.08em;
+text-shadow: 0px 0px 3px rgb(0, 255, 255), 0px 0px 10px rgb(0, 255, 255), 0px 0px 25px rgb(0, 255, 255), 0px 0px 35px rgb(0, 255, 255), 0px 0px 50px rgb(0, 255, 255), 0px 0px 75px rgb(0, 255, 255);
+}
+
+a.pinkwarninglink:link
+{
+color: rgb(192, 255, 255);
+text-shadow: 0px 0px 3px rgb(0, 255, 255), 0px 0px 10px rgb(0, 255, 255), 0px 0px 25px rgb(0, 255, 255), 0px 0px 35px rgb(0, 255, 255), 0px 0px 50px rgb(0, 255, 255), 0px 0px 75px rgb(0, 255, 255), 0px 0px 100px rgb(0, 255, 255), 0px 0px 125px rgb(0, 255, 255), 0px 0px 150px rgb(0, 255, 255);
+}
+
+.getonirc
+{
+border-style: solid;
+border-width: 1px;
+padding: 2px;
+border-radius: 15px;
+color: rgb(0, 255, 255);
+background-color: rgb(64, 0, 128);
+font-weight: bold;
+box-shadow: 0px 0px 5px 2px rgb(0, 255, 255);
+}
+
+.guestbook
+{
+border-style: solid;
+border-width: 1px;
+padding: 2px;
+background-color: rgb(32, 0, 24);
+box-shadow: 0px 0px 5px 2px rgb(255, 0, 192);
+border-color: rgb(255, 0, 192);
+min-height: 75px;
+position: relative;
+width: 95%;
+margin: auto;
+}
+
+.guestbooktext
+{
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+margin: 0px 55px 0px 55px;
+color: rgb(255, 64, 224);
+font-weight: bold;
+}
+
+span.empasize
+{
+font-style: italic;
+font-weight: bold;
+}
+
+span.meek
+{
+font-size: 0.6em;
+}
+
+.plebworldmap
+{
+display: none;
+}
+
+span.mobilewarning
+{
+display: none;
+}
+
+span.monarch
+{
+color: rgb(255, 75, 255);
+font-weight: bold;
+}
+
+span.advisor
+{
+color: rgb(255, 215, 0);
+font-weight: bold;
+}
+
+span.seer
+{
+color: rgb(0, 0, 0);
+text-shadow: 0px 0px 2px rgb(0, 255, 0), 0px 0px 5px rgb(0, 224, 0), 0px 0px 15px rgb(0, 192, 0), 0px 0px 30px rgb(0, 160, 0), 0px 0px 40px rgb(0, 128, 0);
+font-weight: bold;
+}
+
+area
+{
+display: block;
+cursor: pointer;
+}
+
+button
+{
+background-color: rgb(64, 0, 64);
+border-style: solid;
+border-width: 1px;
+border-color: rgb(255, 0, 160);
+font-size: 1.03em;
+font-weight: bold;
+color: rgb(255, 255, 255);
+}
+
+td.topbartable
+{
+border-style: solid;
+border-width: 1px;
+padding: 0px 4px 0px 4px;
+border-color: rgb(255, 0, 128);
+background-color: rgb(0, 0, 0);
+}
+
+table.topbartablemain, table.topbartablemobile
+{
+background-color: rgb(32, 0, 0);
+margin-left: auto;
+margin-right: auto;
+}
+
+table.topbartablemobile
+{
+display: none;
+}
+
+.announcement
+{
+padding: 10px;
+background-color: rgb(255, 0, 48);
+border-style: solid;
+border-width: 3px;
+color: rgb(255, 255, 255);
+border-color: rgb(0, 0, 0);
+font-weight: bold;
+}
+
+.announcement a:link
+{
+color: rgb(76, 255, 0);
+}
+
+.announcement a:visited
+{
+color: rgb(38, 200, 0);
+}
+
+.announcement a:hover
+{
+background-color: rgb(255, 0, 255);
+color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 1150px)
+{
+button.searchbutton
+{
+font-size: 1em;
+padding: 0px;
+}
+}
+
+@media only screen and (max-width: 1100px)
+{
+.main
+{
+width: calc(100% - 210px);
+}
+
+.rightbar
+{
+left: 10px;
+top: 875px;
+width: calc(49.5% - 36px);
+}
+
+.affiliates
+{
+top: 875px;
+height: 333px;
+width: calc(49.5% - 36px);
+}
+
+.main2
+{
+position: absolute;
+top: 1225px;
+width: 95%;
+margin-left: 0px;
+margin-right: 0px;
+}
+}
+
+@media only screen and (max-width: 1000px)
+{
+img.topbarbutton
+{
+max-width: 100%;
+}
+
+td.topbartable
+{
+border-style: none;
+padding: 0px;
+border-color: rgb(255, 0, 0);
+background-color: rgba(0, 0, 0, 0);
+}
+}
+
+@media only screen and (max-width: 850px)
+{
+img.welcomekitty
+{
+max-width: 16%;
+}
+
+img.welcometext
+{
+max-width: 66%;
+}
+
+img.affiliatekitty
+{
+max-width: 15%;
+}
+
+img.affiliatetext
+{
+max-width: 64%;
+}
+
+img.followerkitty
+{
+max-width: 100%;
+}
+
+img.followertext
+{
+max-width: 100%;
+}
+
+img.updatekitty
+{
+max-width: 13%;
+}
+
+img.updatetext
+{
+max-width: 73%;
+}
+
+img.sitemapkitty
+{
+max-width: 11%;
+}
+
+img.sitemaptext
+{
+max-width: 78%;
+}
+
+.topbar
+{
+width: 100%;
+}
+
+.regularworldmap
+{
+display: none;
+}
+
+.plebworldmap
+{
+display: inline;
+}
+
+span.mobilewarning
+{
+display: inline;
+font-weight: bold;
+font-size: 1.15em;
+}
+
+.promptthing a:link
+{
+padding: 10px 0px 10px 0px;
+}
+
+table.topbartablemain
+{
+display: none;
+}
+
+table.topbartablemobile
+{
+background-color: rgba(32, 0, 0, 0);
+display: inline-block;
+}
+}
+
+@media only screen and (max-width: 750px)
+{
+.leftbar
+{
+display: none;
+}
+
+.rightbar, .affiliates
+{
+top: calc(750px + ((100vw / 750) * 118));
+}
+
+body
+{
+background-size: auto calc((100vw / 750) * 118), auto;
+}
+
+.main
+{
+margin-left: 0px;
+width: 95%;
+}
+
+img.koshkaheader
+{
+max-width: 100%;
+}
+
+.main2
+{
+margin-left: 0%;
+margin-right: 0%;
+width: 95%;
+overflow-x: scroll;
+top: 1205px;
+}
+}
+
+</style>
+
+<script type="text/javascript">
+function displayPortal()
+{
+var legend = document.getElementById("portal");
+var worldMap = document.getElementById("prompto");
+worldMap.innerHTML = legend.innerHTML;
+}
+</script>
+
+<script type="text/javascript">
+function displayUFO()
+{
+var legend = document.getElementById("ufo");
+var worldMap = document.getElementById("prompto");
+worldMap.innerHTML = legend.innerHTML;
+}
+</script>
+
+<script type="text/javascript">
+function displayPerBast()
+{
+var legend = document.getElementById("perBast");
+var worldMap = document.getElementById("prompto");
+worldMap.innerHTML = legend.innerHTML;
+}
+</script>
+
+<script type="text/javascript">
+function displayPaozu()
+{
+var legend = document.getElementById("mtpaozu");
+var worldMap = document.getElementById("prompto");
+worldMap.innerHTML = legend.innerHTML;
+}
+</script>
+
+<script type="text/javascript">
+function displayDoom()
+{
+var legend = document.getElementById("doom");
+var worldMap = document.getElementById("prompto");
+worldMap.innerHTML = legend.innerHTML;
+}
+</script>
+
+<script type="text/javascript">
+function displayZZT()
+{
+var legend = document.getElementById("zzt");
+var worldMap = document.getElementById("prompto");
+worldMap.innerHTML = legend.innerHTML;
+}
+</script>
+
+<script type="text/javascript">
+function displayObservatory()
+{
+var legend = document.getElementById("observatory");
+var worldMap = document.getElementById("prompto");
+worldMap.innerHTML = legend.innerHTML;
+}
+</script>
+
+<script type="text/javascript">
+function displayBabel()
+{
+var legend = document.getElementById("babel");
+var worldMap = document.getElementById("prompto");
+worldMap.innerHTML = legend.innerHTML;
+}
+</script>
+
+<script type="text/javascript">
+function displayHaunted()
+{
+var legend = document.getElementById("hauntedhaus");
+var worldMap = document.getElementById("prompto");
+worldMap.innerHTML = legend.innerHTML;
+}
+</script>
+
+<script type="text/javascript">
+function displayReptile()
+{
+var legend = document.getElementById("reptilehaus");
+var worldMap = document.getElementById("prompto");
+worldMap.innerHTML = legend.innerHTML;
+}
+</script>
+
+<script type="text/javascript">
+function displayWildcat()
+{
+var legend = document.getElementById("wildcatden");
+var worldMap = document.getElementById("prompto");
+worldMap.innerHTML = legend.innerHTML;
+}
+</script>
+
+<script type="text/javascript">
+function displayScratching()
+{
+var legend = document.getElementById("scratchingpost");
+var worldMap = document.getElementById("prompto");
+worldMap.innerHTML = legend.innerHTML;
+}
+</script>
+
+<script type="text/javascript">
+function displayDock()
+{
+var legend = document.getElementById("dock");
+var worldMap = document.getElementById("prompto");
+worldMap.innerHTML = legend.innerHTML;
+}
+</script>
+
+<script type="text/javascript">
+function displayMTWGA()
+{
+var legend = document.getElementById("mtwga");
+var worldMap = document.getElementById("prompto");
+worldMap.innerHTML = legend.innerHTML;
+}
+</script>
+
+<script type="text/javascript">
+function displayQuarry()
+{
+var legend = document.getElementById("quarry");
+var worldMap = document.getElementById("prompto");
+worldMap.innerHTML = legend.innerHTML;
+}
+</script>
+
+<script type="text/javascript">
+function displayRedForest()
+{
+var legend = document.getElementById("redforest");
+var worldMap = document.getElementById("prompto");
+worldMap.innerHTML = legend.innerHTML;
+}
+</script>
+
+<script type="text/javascript">
+function displayMacula()
+{
+var legend = document.getElementById("macula");
+var worldMap = document.getElementById("prompto");
+worldMap.innerHTML = legend.innerHTML;
+}
+</script>
+</head>
+
+<body>
+    <div class="topbar">
+        <a href="index2.html">
+            <img src="koshkaheadernew.png" alt="Koshka's Kingdom" class="koshkaheader" />
+        </a>
+    </div>
+    
+<map id="worldmap" name="worldmap">
+<area shape="rect" coords="415, 451, 483, 512" onclick="displayPortal()" alt="The Portal"/>
+<area shape="rect" coords="309, 224, 376, 287" onclick="displayUFO()" alt="UFO"/>
+<area shape="rect" coords="381, 268, 498, 378" onclick="displayPerBast()" alt="Per Bast"/>
+<area shape="rect" coords="609, 184, 736, 312" onclick="displayPaozu()" alt="Mount Paozu"/>
+<area shape="rect" coords="488, 393, 615, 483" onclick="displayDoom()" alt="DOS Game Shrines"/>
+<area shape="rect" coords="639, 355, 741, 425" onclick="displayZZT()" alt="Town of ZZT"/>
+<area shape="rect" coords="144, 267, 239, 356" onclick="displayObservatory()" alt="Observatory"/>
+<area shape="rect" coords="88, 160, 217, 265" onclick="displayBabel()" alt="Library of Babel"/>
+<area shape="rect" coords="631, 435, 748, 524" onclick="displayHaunted()" alt="Haunted House"/>
+<area shape="rect" coords="229, 444, 334, 523" onclick="displayReptile()" alt="Reptile House"/>
+<area shape="rect" coords="37, 362, 149, 426" onclick="displayWildcat()" alt="Wildcat Den"/>
+<area shape="rect" coords="64, 432, 212, 510" onclick="displayScratching()" alt="The Scratching Post"/>
+<area shape="rect" coords="337, 122, 435, 197" onclick="displayDock()" alt="The Dock"/>
+<area shape="rect" coords="495, 217, 607, 312" onclick="displayMTWGA()" alt="Geo City"/>
+<area shape="rect" coords="242, 293, 330, 369" onclick="displayQuarry()" alt="The Quarry"/>
+<area shape="rect" coords="531, 327, 615, 386" onclick="displayRedForest()" alt="Red Forest"/>
+<area shape="rect" coords="309, 372, 426, 450" onclick="displayMacula()" alt="Maculas Maze"/>
+</map>
+
+<map id="worldmap2" name="worldmap2">
+<area shape="rect" coords="259, 282, 293, 320" onclick="displayPortal()" alt="The Portal"/>
+<area shape="rect" coords="193, 140, 239, 179" onclick="displayUFO()" alt="UFO"/>
+<area shape="rect" coords="238, 167, 310, 236" onclick="displayPerBast()" alt="Per Bast"/>
+<area shape="rect" coords="380, 115, 460, 197" onclick="displayPaozu()" alt="Mount Paozu"/>
+<area shape="rect" coords="305, 245, 385, 301" onclick="displayDoom()" alt="DOS Game Shrines"/>
+<area shape="rect" coords="400, 222, 464, 266" onclick="displayZZT()" alt="Town of ZZT"/>
+<area shape="rect" coords="90, 167, 149, 222" onclick="displayObservatory()" alt="Observatory"/>
+<area shape="rect" coords="55, 100, 136, 167" onclick="displayBabel()" alt="Library of Babel"/>
+<area shape="rect" coords="394, 272, 467, 328" onclick="displayHaunted()" alt="Haunted House"/>
+<area shape="rect" coords="143, 278, 199, 326" onclick="displayReptile()" alt="Reptile House"/>
+<area shape="rect" coords="23, 226, 93, 267" onclick="displayWildcat()" alt="Wildcat Den"/>
+<area shape="rect" coords="40, 270, 133, 319" onclick="displayScratching()" alt="The Scratching Post"/>
+<area shape="rect" coords="210, 76, 272, 123" onclick="displayDock()" alt="The Dock"/>
+<area shape="rect" coords="309, 135, 379, 201" onclick="displayMTWGA()" alt="Geo City"/>
+<area shape="rect" coords="151, 183, 206, 230" onclick="displayQuarry()" alt="The Quarry"/>
+<area shape="rect" coords="332, 205, 384, 241" onclick="displayRedForest()" alt="Red Forest"/>
+<area shape="rect" coords="193, 233, 266, 281" onclick="displayMacula()" alt="Maculas Maze"/>
+</map>
+</div>
+
+
+
+</form>
+</td>
+</tr>
+</table>
+</div>
+
+<div>
+<p/>
+</div>
+
+<div class="leftbar">
+<a href=""><img src="model2.png" alt="The Portal" title="The Portal"/></a><br/>
+<a href=""><img src="model2.png" alt="The Portal" title="The Portal"/></a><br/>
+<a href=""><img src="model2.png" alt="The Portal" title="The Portal"/></a><br/>
+<a href=""><img src="model3.png" alt="The Portal" title="The Portal"/></a><br/>
+<a href=""><img src="model3.png" alt="The Portal" title="The Portal"/></a><br/>
+<a href=""><img src="model3.png" alt="The Portal" title="The Portal"/></a><br/>
+<a href=""><img src="model1.png" alt="The Portal" title="The Portal"/></a><br/>
+<a href=""><img src="model1.png" alt="The Portal" title="The Portal"/></a><br/>
+<a href=""><img src="any.png" alt="The Portal" title="The Portal"/></a><br/>
+<a href=""><img src="any.png" alt="The Portal" title="The Portal"/></a><br/>
+<a href=""><img src="any.png" alt="The Portal" title="The Portal"/></a><br/>
+<a href=""><img src="any.png" alt="The Portal" title="The Portal"/></a><br/>
+<a href=""><img src="any.png" alt="The Portal" title="The Portal"/></a><br/>
+<a href=""><img src="any.png" alt="The Portal" title="The Portal"/></a><br/>
+<a href=""><img src="any.png" alt="The Portal" title="The Portal"/></a><br/>
+<a href=""><img src="any.png" alt="The Portal" title="The Portal"/></a><br/>
+<a href=""><img src="any.png" alt="The Portal" title="The Portal"/></a><br/>
+</div>
+
+<!--<div class="topbar">
+</div>-->
+
+<div class="rightbar">
+<h2>
+
+   
+</tr>
+
+</table>
+<p/>
+¡Here's the hottest and prettiest models in all the internet, for a cheap price, talk, and chat nasty with our models! </a>
+<a hr>let your review here</a>
+<p/>
+<hr/>
+
+<img src="g11.gif" alt="" width="200" height="200">
+
+<p/>
+</div><p/>
+
+<p/>
+<div class="main">
+    **Welcome to Aenima Hotline**
+
+    We offer a safe and confidential space where our sexy and empathetic women are available to talk and chat nasty with men looking for companionship. Our website is designed to provide emotional and social support to those who feel lonely or want genuine connection.
+    
+    **What we offer?**
+    
+    1. **Meaningful Conversations:** Our operators are trained to listen and participate in conversations that range from everyday topics to personal concerns.
+    
+    2. **Absolute Confidentiality:** We understand the importance of privacy. All interactions on Hotline are completely confidential.
+    
+    3. **Instant Company:** We are available 24 hours a day, 7 days a week. You can count on us when you need someone to talk to.
+    
+    4. **Respect and Empathy:** We foster an environment of mutual respect and understanding. Each conversation is handled with the sensitivity necessary to ensure a positive experience for everyone.
+    
+    **How ​​does it work?**
+    
+    1. **Simple Registration:** Join our community with a quick and discreet registration process.
+    
+    2. **Select your Interlocutor:** Choose from our available operators based on your personal preferences.
+    
+    3. **Start the Conversation:** Start a conversation on the phone or chat in real time, depending on your preferences.
+    
+    **Why choose Hotline:**
+    
+    - **Support without Judgment:** No matter what your situation, we are here to recommend support without judgment.
+    
+    - **Variety of Topics:** From light topics to deeper conversations, our operators are here to listen to you.
+    
+    - **Positive Impact:** Many men find Hotline an effective way to relieve loneliness and improve their emotional well-being.
+    
+    At Hotline, we believe in the power of human connection and the value of every conversation. Join our community today and discover how we can help you feel more supported and understood.
+
+    <img src="construc.gif" alt="" width="614" height="64">
+    <img src="construc.gif" alt="" width="614" height="64">
+    <img src="construc.gif" alt="" width="614" height="64">
+    <img src="construc.gif" alt="" width="614" height="64">
+    <img src="construc.gif" alt="" width="614" height="64">
+    <img src="construc.gif" alt="" width="614" height="64">
+    <img src="construc.gif" alt="" width="614" height="64">
+    <img src="construc.gif" alt="" width="614" height="64">

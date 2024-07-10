@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <style>
+        body {
+            background-image: url('loveback.gif');
+            background-repeat: repeat;    
+            /* Agrega otros estilos según sea necesario */
+        }
+        
+        /* Asegura que la segunda imagen esté inicialmente oculta */
+        #imagen2 {
+            display: none;
+        }
+        
+        /* Asegura que el contenedor de video esté inicialmente oculto */
+        #video-container2 {
+            display: none;
+        }
+
+        #video-container2 {
+            position: absolute; /* Posicionamiento absoluto para moverlo libremente */
+            top: -40px; /* Ajusta la posición vertical según sea necesario */
+            left: 37px; /* Ajusta la posición horizontal según sea necesario */
+          
+        }
+
+        .cr1 {
+        position: absolute ;
+        margin-top: 500px;
+
+        }
+
+        .g10{
+    margin-left: 100px;
+    margin-top: 30px;
+
+
+        }
+
+        .g100{
+    margin-left: 580px;
+    margin-top: -520px;
+
+
+        }
+
+        .tdoiz2{
+
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+
+   
+    </style>
+</head>
+<body>
+
+<div class="tdoiz2">
+    <img id="imagen1" src="playermediapause.png" alt="Imagen 1">
+    
+    <!-- Segunda imagen que contiene el video (inicialmente oculta) -->
+    <a href="disc4.html"><img id="imagen2" src="playmedia.png" alt="Imagen 2" style="display: none;"></a>
+    
+    <!-- Contenedor del video -->
+    <a href="disc4.html"><div id="video-container2">
+        <video id="video" width="510" height="515">
+            <source src="dec.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+    </div></a>
+
+<div class="g10">
+ <img src="g10.gif" height="150" width="220">
+
+</div>
+
+
+<div class="g100">
+    <img src="20.gif" height="250" width="190">
+</div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Obtener referencias a los elementos del DOM
+            const imagen1 = document.getElementById('imagen1');
+            const imagen2 = document.getElementById('imagen2');
+            const videoContainer = document.getElementById('video-container2');
+            const video = document.getElementById('video');
+
+            // Función para mostrar el video y la segunda imagen al hacer clic en la primera imagen
+            function mostrarVideo() {
+                // Ocultar la primera imagen
+                imagen1.style.display = 'none';
+                // Mostrar la segunda imagen (que contiene el video)
+                imagen2.style.display = 'inline';
+                // Mostrar el contenedor del video
+                videoContainer.style.display = 'block';
+                // Reproducir el video
+                video.play();
+            }
+
+            // Asignar evento click a imagen1 para llamar a la función mostrarVideo
+            imagen1.addEventListener('click', mostrarVideo);
+        });
+    </script>
+</div>
+
+</body>
+</html>

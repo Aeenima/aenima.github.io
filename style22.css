@@ -1,0 +1,19 @@
+
+.txteye {
+   
+animation: ip-blink 2s linear infinite;
+
+}
+
+@keyframes ip-blink { 
+    40% {
+        opacity: 0;
+    }
+}
+
+
+
+
+
+
+
