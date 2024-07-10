@@ -1,18 +1,51 @@
-.crep1 {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inverman.css">
+    <title>inverv1</title>
+    <style>
+      .crep1{
 
-margin-top: 250px;
+        float: right;
 
-}
+      }
 
-.crep3 {
+      .alleye {
 
-    margin-top: -190px;
-    margin-left: 1100px;
-    }
+        margin-top: 200px;
+
+      }
+      .crep3 {
+
+        position: relative;
+        margin-top: 0px;
+    
+      }
+
+  </style>
+</head>
 
 
-    .crep2 {
 
-        margin-top: -170px;
-        margin-left: 120px;
-        }
+
+<body style="background-color: black;">
+
+<div class="alleye">
+<div class="crep1">   
+<a href="inner1.html"><img src="eyess_2.gif" height="176" width="200"></a>
+</div>
+</div>
+
+<div class="crep2">
+<a href="inner2.html"><img src="eyess_2.gif" height="176" width="200"></a>
+</div>
+
+
+<div class="crep3">
+   <center><a href="inner3.html"><img src="eyess_2.gif" height="176" width="200"></a></center>
+</div>
+
+</body>
+</html>
